@@ -7,9 +7,9 @@ namespace CRM.Business.Engines
 {
     public class BaseEngine : IDisposable
     {
-        internal CRMApi_CoreContext _context;
+        internal CRMContactsContext _context;
 
-        public BaseEngine(CRMApi_CoreContext context)
+        public BaseEngine(CRMContactsContext context)
         {
             this._context = context;
         }

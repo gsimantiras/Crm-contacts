@@ -13,7 +13,6 @@ namespace CRM.Api
     public class Startup
     {
         readonly string MyAllowSpecificOrigins = "AllowSpecificOrigins";
-        readonly string AppPath = "../CRM.App";
         public IConfiguration Configuration { get; }
 
         public Startup(IConfiguration configuration)
@@ -29,8 +28,8 @@ namespace CRM.Api
             // In production, the Angular files will be served from this directory
 
             var conString = Configuration.GetConnectionString("CRMApi_CoreContext");
-
-            services.AddDbContext<CRMApi_CoreContext>(options =>
+     
+            services.AddDbContext<CRMContactsContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("CRMApi_CoreContext")));
 
             services.AddCors(options =>

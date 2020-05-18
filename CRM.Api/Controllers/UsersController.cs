@@ -12,9 +12,9 @@ namespace CRM.Api_Core.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
-        private readonly CRMApi_CoreContext _context;
+        private readonly CRMContactsContext _context;
 
-        public UsersController(CRMApi_CoreContext context)
+        public UsersController(CRMContactsContext context)
         {
             this._context = context;
         }

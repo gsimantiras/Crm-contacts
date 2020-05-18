@@ -10,7 +10,7 @@ namespace CRM.Business.Engines
 {
     public class UserEngine : BaseEngine
     {
-        public UserEngine(CRMApi_CoreContext context) : base(context) { }
+        public UserEngine(CRMContactsContext context) : base(context) { }
 
         public async Task<User> GetUser(long id)
         {
