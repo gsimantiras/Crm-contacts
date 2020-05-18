@@ -12,7 +12,7 @@ namespace CRM.Business.Engines
 {
     public class AddressEngine : BaseEngine
     {
-        public AddressEngine(CRMApi_CoreContext context) : base(context) { }
+        public AddressEngine(CRMContactsContext context) : base(context) { }
 
         public async Task<Address> GetAddress(long id)
         {

@@ -7,11 +7,12 @@ using Data.Models;
 
 namespace Data.Data
 {
-    public class CRMApi_CoreContext : DbContext
+    public class CRMContactsContext : DbContext
     {
-        public CRMApi_CoreContext(DbContextOptions<CRMApi_CoreContext> options)
+        public CRMContactsContext(DbContextOptions<CRMContactsContext> options)
             : base(options)
         {
+            this.Database.EnsureCreated();
         }
 
 

@@ -13,9 +13,9 @@ namespace CRM.Api_Core.Controllers
     [ApiController]
     public class AddressController : ControllerBase
     {
-        private readonly CRMApi_CoreContext _context;
+        private readonly CRMContactsContext _context;
 
-        public AddressController(CRMApi_CoreContext context)
+        public AddressController(CRMContactsContext context)
         {
             this._context = context;
         }

@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Data.Migrations
 {
-    [DbContext(typeof(CRMApi_CoreContext))]
+    [DbContext(typeof(CRMContactsContext))]
     [Migration("20200517144945_initial")]
     partial class initial
     {
